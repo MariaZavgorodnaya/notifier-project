@@ -7,10 +7,13 @@
  */
 namespace loggers;
 
+use Monolog\Logger;
+
 class MonologAdapter implements \loggers\AdapterInterface
 {
+    /* @var \Monolog\Logger */
     protected $logger;
-    public function __construct($logger)
+    public function __construct( Logger $logger)
     {
         $this->logger = $logger;
     }
