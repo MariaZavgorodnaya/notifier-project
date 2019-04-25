@@ -3,7 +3,7 @@
     "description": "Notifier",
     "autoload": {
         "psr-4": {
-            "NtSchool\\":"src"
+            "loggers\\":"src"
         }
     },
     "type": "library",
