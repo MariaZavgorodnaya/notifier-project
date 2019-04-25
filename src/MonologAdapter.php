@@ -5,6 +5,7 @@
  * Date: 25.04.2019
  * Time: 21:18
  */
+namespace loggers;
 
 class MonologAdapter implements \loggers\AdapterInterface
 {
