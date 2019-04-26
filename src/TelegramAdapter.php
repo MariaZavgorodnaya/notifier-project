@@ -20,58 +20,50 @@ public function __construct($chat_id, $token){
 }
     public function debug($message)
     {
-        $url = "https://api.telegram.org/bot$this->token/sendMessage?
-        chat_id=$this->chat_id&text=$message";
-        file_get_contents($url . $message);
+        $url = "https://api.telegram.org/bot$this->token/sendMessage?chat_id=$this->chat_id&text=";
+        file_get_contents($url . \urlencode($message));
     }
 
     public function info($message)
     {
-        $url = "https://api.telegram.org/bot$this->token/sendMessage?
-        chat_id=$this->chat_id&text=";
-        file_get_contents($url . $message);
+        $url = "https://api.telegram.org/bot$this->token/sendMessage?chat_id=$this->chat_id&text=";
+        file_get_contents($url . \urlencode($message));
     }
 
     public function notice($message)
     {
-        $url = "https://api.telegram.org/bot$this->token/sendMessage?
-        chat_id=$this->chat_id&text=$message";
-        file_get_contents($url . $message);
+        $url = "https://api.telegram.org/bot$this->token/sendMessage?chat_id=$this->chat_id&text=";
+        file_get_contents($url . \urlencode($message));
     }
 
     public function warning($message)
     {
-        $url = "https://api.telegram.org/bot$this->token/sendMessage?
-        chat_id=$this->chat_id&text=$message";
-        file_get_contents($url . $message);
+        $url = "https://api.telegram.org/bot$this->token/sendMessage?chat_id=$this->chat_id&text=";
+        file_get_contents($url . \urlencode($message));
     }
 
     public function error($message)
     {
-        $url = "https://api.telegram.org/bot$this->token/sendMessage?
-        chat_id=$this->chat_id&text=$message";
-        file_get_contents($url . $message);
+        $url = "https://api.telegram.org/bot$this->token/sendMessage?chat_id=$this->chat_id&text=";
+        file_get_contents($url . \urlencode($message));
     }
 
     public function critical($message)
     {
-        $url = "https://api.telegram.org/bot$this->token/sendMessage?
-        chat_id=$this->chat_id&text=$message";
-        file_get_contents($url . $message);
+        $url = "https://api.telegram.org/bot$this->token/sendMessage?chat_id=$this->chat_id&text=";
+        file_get_contents($url . \urlencode($message));
     }
 
     public function alert($message)
     {
-        $url = "https://api.telegram.org/bot$this->token/sendMessage?
-        chat_id=$this->chat_id&text=$message";
-        file_get_contents($url . $message);
+        $url = "https://api.telegram.org/bot$this->token/sendMessage?chat_id=$this->chat_id&text=";
+        file_get_contents($url . \urlencode($message));
     }
 
     public function emergency($message)
     {
-        $url = "https://api.telegram.org/bot$this->token/sendMessage?
-        chat_id=$this->chat_id&text=$message";
-        file_get_contents($url . $message);
+        $url = "https://api.telegram.org/bot$this->token/sendMessage?chat_id=$this->chat_id&text=";
+        file_get_contents($url . \urlencode($message));
     }
 
 }
