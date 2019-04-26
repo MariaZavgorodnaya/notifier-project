@@ -7,7 +7,7 @@
  */
 
 namespace loggers;
-
+use loggers\AdapterInterface;
 
 class TelegramAdapter implements AdapterInterface
 {
@@ -28,7 +28,7 @@ public function __construct($chat_id, $token){
     public function info($message)
     {
         $url = "https://api.telegram.org/bot$this->token/sendMessage?
-        chat_id=$this->chat_id&text=$message";
+        chat_id=$this->chat_id&text=";
         file_get_contents($url . $message);
     }
 
